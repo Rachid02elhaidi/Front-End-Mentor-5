@@ -121,29 +121,21 @@ body {
   margin-bottom: 20px;
   }
 }
-.container .box img{
-  max-width: 100%;
-}
 
 .container .box .tag{
   position: relative;
+  background-color: #52117ca1;
 }
-.container .box .tag::before{
-  content: "";
-  position: absolute;
+.container .box img{
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #52117ca1;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
 }
 @media (max-width: 375px) {
   .container .box .tag {
     order: -1;
     width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .container .box  {
   }
 }
